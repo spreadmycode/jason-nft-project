@@ -1,0 +1,143 @@
+.contentBackground {
+  background-image: url('../public/background.png');
+  height:100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+}
+.centerScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+@font-face {
+  font-family: "DwarvenAxe"; 
+  src: local("DwarvenAxe"),
+  url("../fonts/DwarvenAxe.ttf") format("truetype");
+  font-weight: normal;  
+
+  /* src: url("//db.onlinewebfonts.com/t/11b9313c156261bdee0bc8b745b34450.eot"); 
+  src: url("//db.onlinewebfonts.com/t/11b9313c156261bdee0bc8b745b34450.eot?#iefix") format("embedded-opentype"), 
+  url("//db.onlinewebfonts.com/t/11b9313c156261bdee0bc8b745b34450.woff2") format("woff2"), 
+  url("//db.onlinewebfonts.com/t/11b9313c156261bdee0bc8b745b34450.woff") format("woff"), 
+  url("//db.onlinewebfonts.com/t/11b9313c156261bdee0bc8b745b34450.ttf") format("truetype"), 
+  url("//db.onlinewebfonts.com/t/11b9313c156261bdee0bc8b745b34450.svg#DwarvenAxe") format("svg");  */
+}
+.headerText {
+  color: white !important;
+  font-family: 'DwarvenAxe', Fallback, sans-serif;
+  font-size: 100px;
+  letter-spacing: 4px;
+}
+.headerTextHidden {
+  color: transparent !important;
+  font-family: 'DwarvenAxe', Fallback, sans-serif;
+  font-size: 100px;
+  letter-spacing: 4px;
+}
+.secondaryText {
+  color: white;
+  font-family: 'DwarvenAxe', Fallback, sans-serif;
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+.hiddenSecondaryText {
+  color: transparent;
+  font-family: 'DwarvenAxe', Fallback, sans-serif;
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+}
+.imageContainer {
+  width: 50vw;
+  height: 45vh;
+}
+@media only screen and (max-width: 550px) {
+  .imageContainer {
+    width: 50vw;
+    height: 30vh;
+  }
+  .image {
+    max-width: 40% !important;
+    max-height: 40% !important;
+    min-width: 63% !important;
+    min-height: 40% !important;
+    opacity: 1 !important;
+    object-fit: scale-down;
+    filter: brightness(0) invert(1);
+  }
+  .hiddenImage {
+    max-width: 40% !important;
+    max-height: 40% !important;
+    min-width: 63% !important;
+    min-height: 40% !important;
+    opacity: 0 !important;
+    object-fit: scale-down;
+  }
+  .headerText {
+    color: white !important;
+    font-family: 'DwarvenAxe', Fallback, sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+  }
+  .headerTextHidden {
+    color: transparent !important;
+    font-family: 'DwarvenAxe', Fallback, sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+  }
+}
+.image {
+  max-width: 40% !important;
+  max-height: 40% !important;
+  min-width: 40% !important;
+  min-height: 40% !important;
+  opacity: 1 !important;
+  object-fit: scale-down;
+  filter: brightness(0) invert(1);
+}
+.hiddenImage {
+  max-width: 40% !important;
+  max-height: 40% !important;
+  min-width: 40% !important;
+  min-height: 40% !important;
+  opacity: 0 !important;
+  object-fit: scale-down;
+}
+.mintButton {
+  color: black !important;
+  background-color: white !important;
+  font-family: 'DwarvenAxe', Fallback, sans-serif !important;
+  font-size: 34px !important;
+  letter-spacing: 3px;
+  border-radius: 0px !important;
+  max-width: 285px;
+  margin-top: 20px;
+  margin-bottom: 30px !important;
+  line-height: 1 !important;
+}
+.mintButtonHidden {
+  color: transparent !important;
+  background-color: transparent !important;
+  background: transparent;
+  font-family: 'DwarvenAxe', Fallback, sans-serif !important;
+  font-size: 34px !important;
+  letter-spacing: 3px;
+  border-radius: 0px !important;
+  max-width: 285px;
+  margin-top: 20px;
+  margin-bottom: 30px !important;
+  line-height: 1 !important;
+}
